@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Javascript in detail</title></head>
+    <body>
+        <center>
+            <h2>The javascript string() method.</h2>
+            <p id="number_result"></p>
+            <p id="string_result"></p>
+            <script>
+                var x =  56;
+                var y =  46;
+                document.getElementById("number_result").innerHTML = x + y;
+                document.getElementById("string_result").innerHTML = String(x) + String(y);
+            </script>
+            <h2>Search position</h2>
+
+<p id="search_result"></p>
+<p id="replace_result"></p>
+<script>
+    var str = "Jambo! How are you doing?";
+    var search_position = str.search("doing?");
+    var txt = str.replace("doing?, feeling" );
+    document.getElementById("search_result").innerHTML = search_position;
+     document.getElementById("replace_result").innerHTML = txt;
+
+
+</script>
+
+<p id="result3"></p>
+<p id="result4"></p>
+<p id="result5"></p>
+<p id="result6"></p>
+<script>
+   add = (a, b, c) => a + b + c;
+   document.getElementById("result3").innerHTML = add(5, 4, 4);
+    multiply = (c, d ) => c * d;
+       document.getElementById("result4").innerHTML = multiply(6, 8);
+        divide = (e, f) => e / f ;
+           document.getElementById("result5").innerHTML = divide(49, 7);
+            subtract = (g, h,) => g-h;
+               document.getElementById("result6").innerHTML = subtract(9, 50);
+
+
+
+</script>
+<h2>Error handling</h2>
+<p id="error_message"></p>
+<script>
+    try{
+        addalert("Welcome guest!");
+    }
+    catch(err) {
+        document.getElementById("error_message").innerHTML = err.message
+    }
+</script>
+
+        </center>
+    </body>
+</html>
